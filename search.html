@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="icons/icon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ae00ff" />
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://netflix-1uh.pages.dev/og.jpg"/>
+  <meta name="description"
+    content="">
+  <title>ModirimovieVip</title>
+
+  <link rel="preload stylesheet" href="css/center-atom.min.css" as="style">
+  <link rel="preload stylesheet" href="css/style.css" as="style">
+  <script async src="js/jquery.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-THTQ9GZQ0J">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-THTQ9GZQ0J');
+  </script>
+<!-- Serviceworker code for PWA  -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          console.log('Service worker registered: ', registration.scope);
+        }).catch(function(error) {
+          console.log('Service worker registration failed: ', error);
+        });
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <div class="search-container">
+    <input type="search" id="search-input" placeholder="Search Movie">
+    <button id="search-button">Search</button>
+  </div>
+  <center>
+    <div id="video" class="video">
+      <iframe id="iframe" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <p style="color: rgb(79, 216, 221); font-weight: 500;"></p>
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <div class="addthis_inline_share_toolbox"></div>
+      <div id="webSeriesData"></div>
+    </div>
+  </center>
+  <div id="results"></div>
+  <center style="margin-top: 2vh;">
+    <div class="alwaysVisibleContent">
+
+
+
+      <div class="pagelinks">
+	  
+	  
+	  
+
+      </div>
+    </div>
+   
+
+
+      <div class="footerLinks">
+        <a href="https://tinyurl.com/2embed-api" target="_blank"></a>
+        <a href="https://jquery.com/" target="_blank"></a>
+        <a href="https://codebyzach.github.io/pace/" target="_blank"></a>
+        <a href="https://www.2embed.to/library" target="_blank"></a>
+        <a href="https://imdb.com" target="_blank"></a>
+        <a href="https://corsproxy.io" target="_blank"></a>
+      </div>
+    </div>
+  </center>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script src="js/script.min.js"></script>
+    <script src="js/sw.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9489381289747189"
+    crossorigin="anonymous"></script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-624474fdd4c42686"></script>
+</body>
+</html>

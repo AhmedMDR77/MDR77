@@ -91,7 +91,7 @@ function setAll(imdb, title, season, episode, type) {
     a.setAttribute("IMDB", imdb);
     a.setAttribute(
       "href",
-      `https://www.2embed.to/embed/imdb/tv?id=${imdb}&s=${season}&e=${episode}`
+      `https://www.2embed.cc/embed/imdb/tv?id=${imdb}&s=${season}&e=${episode}`
     );
     a.setAttribute("target", "_blank");
     a.click();
